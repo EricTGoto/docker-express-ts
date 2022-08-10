@@ -3,5 +3,8 @@ services:
   express-app:
     build: .
     image: express-ts
+    command: nodemon -L index.js
+    volumes:
+      - .:/app
     ports:
       - "5000:5000"

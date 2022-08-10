@@ -16,6 +16,12 @@ const pancake3 = {
   popular: true,
 };
 
-const pancakes = [pancake1, pancake2, pancake3];
+const pancake4 = {
+  flavour: 'whole-grain',
+  cost: 4,
+  popular: false,
+};
+
+const pancakes = [pancake1, pancake2, pancake3, pancake4];
 
 module.exports = pancakes;
