@@ -1,6 +1,6 @@
 require('dotenv').config();
 import express, { Express, Request, Response } from 'express';
-const pancakes = require('../data/pancakes');
+const pancakes = require('./data/pancakes');
 const app: Express = express();
 
 app.get('/', (request: Request, response: Response) => {
