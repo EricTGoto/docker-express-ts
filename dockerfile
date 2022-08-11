@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14 as dev
 
 WORKDIR /app
 
@@ -8,9 +8,9 @@ RUN npm install
 RUN npm install -g nodemon
 
 COPY . .
+EXPOSE 5000
+
+FROM dev as production 
 
 RUN npm run build
 
-EXPOSE 5000
-
-CMD [ "npm", "start" ]
