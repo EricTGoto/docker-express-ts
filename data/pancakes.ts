@@ -5,19 +5,19 @@ interface Pancake {
 }
 
 const pancake1: Pancake = {
-  flavour: "chocolate",
+  flavour: 'chocolate',
   cost: 5,
-  popular: true
+  popular: true,
 };
 
 const pancake2: Pancake = {
-  flavour: "plain",
+  flavour: 'plain',
   cost: 4,
   popular: false,
 };
 
 const pancake3: Pancake = {
-  flavour: "blueberry",
+  flavour: 'blueberry',
   cost: 5,
   popular: true,
 };

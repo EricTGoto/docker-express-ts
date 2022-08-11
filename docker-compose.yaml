@@ -3,7 +3,7 @@ services:
   express-app:
     build: .
     image: express-ts
-    command: nodemon -L index.js
+    command: npm run dev
     volumes:
       - .:/app
     ports:
